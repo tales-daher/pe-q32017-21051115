@@ -8,14 +8,14 @@ int repetidos (int *n, int x) {
 			repetidos++;
 		} else {
 			if (repetidos > 1) {
-				printf("%d - %d\n", temp, repetidos);
+				printf("%d - %d ", temp, repetidos);
 				repetidos = 1;
 			}
 			temp = *(n+i);
 		}
 	}
 	if (repetidos > 1) {
-		printf("%d - %d\n", temp, repetidos);
+		printf("%d - %d ", temp, repetidos);
 	}
 }
 
